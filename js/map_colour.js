@@ -28,7 +28,7 @@ var schoolData = [{
 }, 
 {
     "type": "Feature",
-    "properties": {"name": "Whitehall", "Success %":.169,"Absent %":0.238, "ACT Remedial %": 0.106, "Median Income %": 0.322, "Diversity %": 0.68, "Parent with College Degree":0.106, "Teacher Experience": .4375, "Teacher Salary":.71135, "Teacher Per 1000 student %":0.7723, "Graduation %":0.77},
+    "properties": {"name": "Whitehall", "Success %":.169,"Absent %":0.238, "ACT Remedial %": 0.106, "Median Income %": 0.322, "Diversity %": 0.68, "Parent with College Degree":0.106, "Teacher Experience": .438, "Teacher Salary":.711, "Teacher Per 1000 student %":0.772, "Graduation %":0.77},
     "geometry": {
         "type": "Polygon",
         "coordinates":[[
@@ -114,7 +114,7 @@ var schoolData = [{
     }
 }, {
     "type": "Feature",
-    "properties": {"name": "New Albany", "Success %":.839,"Absent %":0.091, "ACT Remedial %": 0.644, "Median Income %": 1, "Diversity %": 0.17, "Parent with College Degree":0.668, "Teacher Experience": .9375, "Teacher Salary":0.87744, "Teacher Per 1000 student %":0.8102, "Graduation %":0.974},
+    "properties": {"name": "New Albany", "Success %":.839,"Absent %":0.091, "ACT Remedial %": 0.644, "Median Income %": 1, "Diversity %": 0.17, "Parent with College Degree":0.668, "Teacher Experience": .938, "Teacher Salary":0.877, "Teacher Per 1000 student %":0.810, "Graduation %":0.974},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
@@ -154,7 +154,7 @@ var schoolData = [{
 
 {
     "type": "Feature",
-    "properties": {"name": "Upper Arlington", "Success %":.952,"Absent %":0.062, "ACT Remedial %": 0.756, "Median Income %": 0.998, "Diversity %": 0.08, "Parent with College Degree":0.734, "Teacher Experience": .9375, "Teacher Salary":1, "Teacher Per 1000 student %":0.955, "Graduation %":0.975},
+    "properties": {"name": "Upper Arlington", "Success %":.952,"Absent %":0.062, "ACT Remedial %": 0.756, "Median Income %": 0.998, "Diversity %": 0.08, "Parent with College Degree":0.734, "Teacher Experience": .938, "Teacher Salary":1, "Teacher Per 1000 student %":0.955, "Graduation %":0.975},
     "geometry": {
         "type": "Polygon",
         "coordinates":[[
@@ -194,7 +194,7 @@ var schoolData = [{
 
 {
     "type": "Feature",
-    "properties": {"name": "Southwestern", "Success %":.28,"Absent %":0.18, "ACT Remedial %": 0.13, "Median Income %": 0.459, "Diversity %": 0.33, "Parent with College Degree":0.207, "Teacher Experience": .8125, "Teacher Salary":0.80364, "Teacher Per 1000 student %":0.73408, "Graduation %":0.865},
+    "properties": {"name": "Southwestern", "Success %":.28,"Absent %":0.18, "ACT Remedial %": 0.13, "Median Income %": 0.459, "Diversity %": 0.33, "Parent with College Degree":0.207, "Teacher Experience": .8125, "Teacher Salary":0.804, "Teacher Per 1000 student %":0.734, "Graduation %":0.865},
     "geometry": {
         "type": "Polygon",
         "coordinates":[[
@@ -225,7 +225,7 @@ var schoolData = [{
 
 
 
-var map = L.map('map').setView([39.9611800, -82.9987900], 10.5);
+var map = L.map('map').setView([39.9611800, -82.9987900], 10);
 
 var drawChoice = 0;
 
@@ -251,7 +251,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
         densityStr = drawArray[drawChoice];
         
 		this._div.innerHTML = '<h4>Percentage Value</h4>' +  (props ?
-			'<b>' + props.name + '</b><br />' + densityStr + ' : ' + props[densityStr] + ' %'
+			'<b>' + props.name + '</b><br />' + densityStr + ' : ' + (props[densityStr] * 100).toFixed(2) + ' %'
 			: 'Hover over a state');
 	};
 
@@ -501,14 +501,26 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 
 	// get color depending on population density value
 	function getColor(d) {
-		return d > 0.90 ? '#800026' :
-				d > 0.80  ? '#BD0026' :
-				d > 0.70  ? '#E31A1C' :
-				d > 0.60  ? '#FC4E2A' :
-				d > 0.40   ? '#FD8D3C' :
-				d > 0.20   ? '#FEB24C' :
-				d > 0.05   ? '#FED976' :
-							'#FFEDA0';
+		return d > 0.95 ? '#ff0000' : //red 
+				d > 0.90  ? '#a81c1c' :
+				d > 0.85  ? '#fe7573' :
+				d > 0.80  ? '#fe8073' :
+				d > 0.75   ? '#fe8e73' :
+				d > 0.70   ? '#fe9873' :
+				d > 0.65   ? '#fea173' :
+				d > 0.60  ? '#feac73' :
+				d > 0.55  ? '#feb873' :
+				d > 0.50  ? '#fecb73' :
+				d > 0.45  ? '#fedd73' :
+				d > 0.40  ? '#fef273' :
+				d > 0.35  ? '#edfe73' :
+				d > 0.30  ? '#d4fe73' :
+				d > 0.25  ? '#bafe73' :
+				d > 0.20  ? '#8efe73' :
+				d > 0.15  ? '#73fe85' :
+				d > 0.10  ? '#73fea4' :
+				d > 0.05  ? '#74febe' :				
+							'#75fef0'; // turq
 	}
 
 	function style(feature) {
@@ -611,20 +623,26 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 	legend.onAdd = function (map) {
 
 		var div = L.DomUtil.create('div', 'info legend'),
-			grades = [1, 2, 5, 10, 20, 50, 90, 100],
+			grades = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100],
 			labels = [],
-			from, to;
+			start, to;
 
 		for (var i = 0; i < grades.length-1; i++) {
-			from = grades[i];
+			start = grades[i];
 			to = grades[i + 1];
-
-			labels.push(
-				'<i style="background:' + getColor(from + 1) + '"></i> ' +
-				from + (to ? '&ndash;' + to : ''));
+			
+			//labels.push(
+			//	'<i style="background:' + getColor((start + 1) / 100.0) + '"></i> ' +
+			//	start + (to ? '&ndash;' + to : ''));
+			div.innerHTML +=
+            '<i style="background:' + getColor((grades[i] + 1) / 100.0) + '"></i> ' +
+            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+			
+			
 		}
-
-		div.innerHTML = labels.join('<br>');
+		
+		console.log(labels);
+		//div.innerHTML = labels.join('<br>');
 		return div;
 	};
     
