@@ -238,7 +238,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 	}).addTo(map);
 
 
-	// control that shows state info on hover
+	// control that shows district info on hover
 	var info = L.control();
 
 	info.onAdd = function (map) {
@@ -253,7 +253,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
         
 		this._div.innerHTML = '<h4>Percentage Value</h4>' +  (props ?
 			'<b>' + props.name + '</b><br />' + densityStr + ' : ' + (props[densityStr] * 100).toFixed(2) + ' %'
-			: 'Hover over a state');
+			: 'Hover over a district');
 	};
 
 	info.addTo(map);
