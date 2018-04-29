@@ -26,6 +26,11 @@
 				text-anchor: middle;
 				fill: white;
 			}
+			p{
+				color: white;
+				font-family: 'Permanent Marker', cursive;
+				margin-left:5%;
+			}
 			h1{
 				color: white;
 				font-family: 'Permanent Marker', cursive;
@@ -41,6 +46,11 @@
 			body{
 				background-color: black;
 			}
+			button{
+				display: inline-block;			
+				padding: 5px 5px;
+				
+			}
 			.leaflet-control-attribution a {
                 color: blue !important;
                 font-family: "Courier New", Courier, monospace !important;
@@ -52,8 +62,6 @@
 			a:link {
 				color: white; 
 				font-family: 'Permanent Marker', cursive;
-				margin-top:3%;
-				margin-left:5%;
 			}
 			a:visited {
 				color: white;
@@ -72,7 +80,23 @@
 				float: left; 
 				margin-right: 
 				8px; opacity: 0.7; 
+			}	
+			#c-button{
+				display: flex;
+				justify-content: space-around;
+				text-align: center;
+				margin-left: 40%;
+				margin-bottom: 20%;
 			}
+			button{
+				width: 250%;
+				height: 125%;
+			}
+			#dslink{
+				margin-top:3%;
+				margin-left:5%;
+			}
+
 		</style>
 		<link rel="shortcut icon" href="#" />
 	</head>
@@ -93,9 +117,29 @@
 		<h2>Graduation Rate</h2>
 		
 		<h1> <u>Data </u></h1>
-		<a href="http://webapp2.ode.state.oh.us/similar_districts/raw_data.asp">(Raw) Distict Data</a>
-		<a href="http://reportcard.education.ohio.gov/Pages/Download-Data.aspx">(Raw) Ohio School Report Card</a>
-		<a href="https://github.com/TheAnig/columbus-city-school-analysis/blob/master/data/school-data.csv">Our Data</a>
+		<a id='dslink' href="http://webapp2.ode.state.oh.us/similar_districts/raw_data.asp">(Raw) Distict Data</a>
+		<a id='dslink' href="http://reportcard.education.ohio.gov/Pages/Download-Data.aspx">(Raw) Ohio School Report Card</a>
+		<a id='dslink' href="https://github.com/TheAnig/columbus-city-school-analysis/blob/master/data/school-data.csv">Our Data</a>
 		
+		<h1> <u>Information</u></h1>
+		<p> As Columbus becomes a larger metropolitan city, there
+			still seems to be a disparity in the quality of public school
+			education. Franklin County has 16 school districts, we look
+			to see if location, socio-economic issues, and teacher's
+			qualifications affect a school districts performance. Our
+			visualization will explore what factors impact a students
+			performance the most.</p>
+		<h1> <u>Factors</u></h1>
+		<p><u>Success %:</u> Percentage of students who have one component of the success program outlined
+		<a href="http://education.ohio.gov/Topics/Data/Report-Card-Resources/Prepared-for-Success-Component"> here</a></p>
+		<p><u>ACT %:</u> Percentage of students who were ACT remedial free</p>
+		<p><u>Median Income:</u> Median income percentage taken against the area's maximum</p>
+		<p><u>Diversity %:</u> Percentage of students who come from minority groups</p>
+		<p><u>College Parent:</u> Percentage of students who have one parent with a college degree</p>
+		<p><u>Teacher Experience:</u> Percentage of teacher salary compared to the area's maximum</p>
+		<p><u>Teacher Salary:</u> Percentage of teacher salary compared to the area's maximum</p>
+		<p><u>Teacher Desnity:</u> Number of teachers per 1,000 students percentage taken against the area's maximum</p>
+		<p><u>Absent %:</u> Percentage of students who fell under the chronic absenteeism threshold
+		<a href="https://edexcellence.net/articles/ohio%E2%80%99s-essa-plan-using-reduced-chronic-absenteeism-as-a-measure-of-student-engagement"> (More info)</a></p>
 	</body> 
 </html>

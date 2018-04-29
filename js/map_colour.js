@@ -252,7 +252,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 
         onAdd: function (map) {
             var container = L.DomUtil.create('div');
-
+			
+			container.id = 'c-button';
             container.innerHTML = "<button>Graduation %</button>"
             container.style.backgroundColor = 'white';     
             container.style.backgroundSize = "30px 30px";
@@ -279,7 +280,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 
         onAdd: function (map) {
             var container = L.DomUtil.create('div');
-
+			
+			container.id = 'c-button';
             container.innerHTML = "<button>Success %</button>"
             container.style.backgroundColor = 'white';     
             container.style.backgroundSize = "30px 30px";
@@ -306,7 +308,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
         onAdd: function (map) {
             var container = L.DomUtil.create('div');
 
-            container.innerHTML = "<button>ACT Remedial %</button>"
+            container.id = 'c-button';
+			container.innerHTML = "<button>ACT %</button>"
             container.style.backgroundColor = 'white';     
             container.style.backgroundSize = "30px 30px";
             container.style.width = '30px';
@@ -332,7 +335,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
         onAdd: function (map) {
             var container = L.DomUtil.create('div');
 
-            container.innerHTML = "<button>Median Income %</button>"
+            container.id = 'c-button';
+			container.innerHTML = "<button>Median Income</button>"
             container.style.backgroundColor = 'white';     
             container.style.backgroundSize = "30px 30px";
             container.style.width = '30px';
@@ -358,7 +362,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
         onAdd: function (map) {
             var container = L.DomUtil.create('div');
 
-            container.innerHTML = "<button>Diversity %</button>"
+            container.id = 'c-button';
+			container.innerHTML = "<button>Diversity %</button>"
             container.style.backgroundColor = 'white';     
             container.style.backgroundSize = "30px 30px";
             container.style.width = '30px';
@@ -384,7 +389,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
         onAdd: function (map) {
             var container = L.DomUtil.create('div');
 
-            container.innerHTML = "<button>Parent with College Degree</button>"
+            container.id = 'c-button';
+			container.innerHTML = "<button>College Parent</button>"
             container.style.backgroundColor = 'white';     
             container.style.backgroundSize = "30px 30px";
             container.style.width = '30px';
@@ -410,7 +416,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
         onAdd: function (map) {
             var container = L.DomUtil.create('div');
 
-            container.innerHTML = "<button>Teacher Experience</button>"
+            container.id = 'c-button';
+			container.innerHTML = "<button>Teacher Experience</button>"
             container.style.backgroundColor = 'white';     
             container.style.backgroundSize = "30px 30px";
             container.style.width = '30px';
@@ -436,7 +443,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
         onAdd: function (map) {
             var container = L.DomUtil.create('div');
 
-            container.innerHTML = "<button>Teacher Salary</button>"
+            container.id = 'c-button';
+			container.innerHTML = "<button>Teacher Salary</button>"
             container.style.backgroundColor = 'white';     
             container.style.backgroundSize = "30px 30px";
             container.style.width = '30px';
@@ -462,7 +470,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
         onAdd: function (map) {
             var container = L.DomUtil.create('div');
 
-            container.innerHTML = "<button>Teacher Density</button>"
+            container.id = 'c-button';
+			container.innerHTML = "<button>Teacher Density</button>"
             container.style.backgroundColor = 'white';     
             container.style.backgroundSize = "30px 30px";
             container.style.width = '30px';
@@ -488,7 +497,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
         onAdd: function (map) {
             var container = L.DomUtil.create('div');
 
-            container.innerHTML = "<button>Absent %</button>"
+            container.id = 'c-button';
+			container.innerHTML = "<button>Absent %</button>"
             container.style.backgroundColor = 'white';     
             container.style.backgroundSize = "30px 30px";
             container.style.width = '30px';
