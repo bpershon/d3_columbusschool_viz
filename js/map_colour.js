@@ -543,7 +543,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
                 color = getColor(feature.properties["Diversity %"]);
                 break;
             case 5:
-                color = getColor(feature.properties["Parents with College Degree"]);
+                color = getColor(feature.properties["Parent with College Degree"]);
                 break;
             case 6:
                 color = getColor(feature.properties["Teacher Experience"]);
@@ -552,7 +552,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
                 color = getColor(feature.properties["Teacher Salary"]);
                 break;
             case 8:
-                color = getColor(feature.properties["Teacher Per 1000 student"]);
+                color = getColor(feature.properties["Teacher Per 1000 student %"]);
                 break;
             
             default:
