@@ -18,7 +18,7 @@ var svg = d3.select('#rbarchart')
 	.attr("width", svg_width)
 	.attr("height", svg_height)
 	.append("g")
-	.attr("transform", "translate(" + (svg_width - 400) + "," + (svg_height/2) + ") "); //scale(" + 0.85 + "," + 0.85 + ")
+	.attr("transform", "translate(" + (svg_width - 400) + "," + (svg_height/2) + ") scale(" + 0.85 + "," + 0.85 + ")"); //scale(" + 0.85 + "," + 0.85 + ")
 // bar color vars
 var color = d3.scaleOrdinal()
     .range(["#93278F","#B091FF","#84143F","#FF7BAC","#ED1E79","#C61300","#FF6600","#F7B21E","#FFE98F","#E2De34","#9FC63F","#239152","#00BDC8","#99ECFF","#459FFF","#2E3192"]);
