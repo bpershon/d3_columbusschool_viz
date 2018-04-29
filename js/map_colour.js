@@ -20,22 +20,22 @@ var schoolData = [{
     "geometry": {
         "type": "Polygon",
         "coordinates":[[
-			[-82.950013, 39.982204], 
-            [-82.950013, 39.947409],
-            [-82.922772, 39.947409],
-            [-82.922772, 39.982204]
+			[-82.945013, 39.979204], 
+            [-82.945013, 39.929409],
+            [-82.920772, 39.929409],
+            [-82.920772, 39.979204]
 		]]}	
 }, 
 {
     "type": "Feature",
-    "properties": {"name": "Whitehall", "Success %":.169,"Absent %":0.238, "ACT Remedial %": 0.106, "Median Income %": 0.322, "Diversity %": 0.68, "Parent with College Degree":0.106, "Teacher Experience": .438, "Teacher Salary":.711, "Teacher Per 1000 student %":0.772, "Graduation %":0.77},
+    "properties": {"name": "Whitehall", "Success %":.169,"Absent %":0.238, "ACT Remedial %": 0.106, "Median Income %": 0.322, "Diversity %": 0.68, "Parent with College Degree":0.106, "Teacher Experience": .4375, "Teacher Salary":.71135, "Teacher Per 1000 student %":0.7723, "Graduation %":0.77},
     "geometry": {
         "type": "Polygon",
         "coordinates":[[
-			[-82.912916, 39.986581],
-			[-82.851137, 39.986581],
-			[-82.851137, 39.951013],
-			[-82.912916, 39.951013]
+			[-82.912916, 39.979581],
+			[-82.851137, 39.979581],
+			[-82.851137, 39.931013],
+			[-82.912916, 39.931013]
 			
 		]]}	
 },
@@ -46,8 +46,8 @@ var schoolData = [{
         "type": "Polygon",
         "coordinates":[[
 			[-82.949171, 39.927465], 
-            [-82.798571, 39.927465],
-            [-82.798571, 39.796497],
+            [-82.838571, 39.927465],
+            [-82.838571, 39.796497],
             [-82.949171, 39.796497]	
 		]]}	
 },
@@ -57,10 +57,10 @@ var schoolData = [{
     "geometry": {
         "type": "Polygon",
         "coordinates":[[
-			[-82.848219, 39.869521],
-			[-82.752706, 39.869521],
-			[-82.752706, 39.817532],	
-			[-82.848219, 39.817532]
+			[-82.831219, 39.929521],
+			[-82.752706, 39.929521],
+			[-82.752706, 39.797532],	
+			[-82.831219, 39.797532]
 			
 		]]}	
 },
@@ -70,10 +70,10 @@ var schoolData = [{
     "geometry": {
         "type": "Polygon",
         "coordinates":[[
-			[-82.836013, 39.988194],
-			[-82.742168, 39.988194],
+			[-82.846013, 39.978194],
+			[-82.742168, 39.978194],
 			[-82.742168, 39.931447],
-			[-82.836013, 39.931447]
+			[-82.846013, 39.931447]
 			
 		]]}	
 },
@@ -83,10 +83,10 @@ var schoolData = [{
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
-            [-83.230086, 40.198078],
-            [-83.230086, 40.060755],
-            [-83.059657, 40.060755],
-            [-83.059657, 40.198078]
+            [-83.280086, 40.198078],
+            [-83.280086, 40.060755],
+            [-83.099657, 40.060755],
+            [-83.099657, 40.198078]
         ]]
     }
 }, {
@@ -95,10 +95,10 @@ var schoolData = [{
     "geometry": {
         "type": "Polygon",
         "coordinates":[[
-            [-83.083629, 40.138881], 
-            [-83.083629, 40.074383],
+            [-83.093629, 40.158881], 
+            [-83.093629, 40.074383],
             [-82.971307, 40.074383],  
-            [-82.971307, 40.138881]
+            [-82.971307, 40.158881]
         ]]}    
 }, {
     "type": "Feature",
@@ -106,22 +106,22 @@ var schoolData = [{
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
-            [-82.980829, 40.179594],
-            [-82.980829, 40.055283],
-            [-82.851353, 40.055283],
-            [-82.851353, 40.179594]
+            [-82.960829, 40.199594],
+            [-82.960829, 40.073283],
+            [-82.830353, 40.073283],
+            [-82.830353, 40.199594]
         ]]
     }
 }, {
     "type": "Feature",
-    "properties": {"name": "New Albany", "Success %":.839,"Absent %":0.091, "ACT Remedial %": 0.644, "Median Income %": 1, "Diversity %": 0.17, "Parent with College Degree":0.668, "Teacher Experience": .938, "Teacher Salary":0.877, "Teacher Per 1000 student %":0.810, "Graduation %":0.974},
+    "properties": {"name": "New Albany", "Success %":.839,"Absent %":0.091, "ACT Remedial %": 0.644, "Median Income %": 1, "Diversity %": 0.17, "Parent with College Degree":0.668, "Teacher Experience": .9375, "Teacher Salary":0.87744, "Teacher Per 1000 student %":0.8102, "Graduation %":0.974},
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
-            [-82.873265, 40.129702],
-            [-82.873265, 40.051028],
-            [-82.761827, 40.051028],
-            [-82.761827, 40.129702]
+            [-82.823265, 40.189702],
+            [-82.823265, 40.071028],
+            [-82.741827, 40.071028],
+            [-82.741827, 40.189702]
         ]]
     }
 }, {
@@ -130,10 +130,10 @@ var schoolData = [{
     "geometry": {
         "type": "Polygon",
         "coordinates": [[
-            [-82.916201, 40.058967],
-            [-82.916201, 39.978671],
-            [-82.767483, 39.978671],
-            [-82.767483, 40.058967]
+            [-82.943201, 40.068967],
+            [-82.943201, 39.982671],
+            [-82.747483, 39.982671],
+            [-82.747483, 40.068967]
         ]]
     }
 },
@@ -144,24 +144,24 @@ var schoolData = [{
     "geometry": {
         "type": "Polygon",
         "coordinates":[[
-			[-83.206105, 40.069125],
-            [-83.206105, 39.999671],
-            [-83.097193, 39.999671],
-            [-83.097193, 40.069125]
+			[-83.246105, 40.059125],
+            [-83.246105, 39.989671],
+            [-83.107193, 39.989671],
+            [-83.107193, 40.059125]
 
 		]]}	
 },
 
 {
     "type": "Feature",
-    "properties": {"name": "Upper Arlington", "Success %":.952,"Absent %":0.062, "ACT Remedial %": 0.756, "Median Income %": 0.998, "Diversity %": 0.08, "Parent with College Degree":0.734, "Teacher Experience": .938, "Teacher Salary":1, "Teacher Per 1000 student %":0.955, "Graduation %":0.975},
+    "properties": {"name": "Upper Arlington", "Success %":.952,"Absent %":0.062, "ACT Remedial %": 0.756, "Median Income %": 0.998, "Diversity %": 0.08, "Parent with College Degree":0.734, "Teacher Experience": .9375, "Teacher Salary":1, "Teacher Per 1000 student %":0.955, "Graduation %":0.975},
     "geometry": {
         "type": "Polygon",
         "coordinates":[[
-			[-83.103713, 40.063688],
-            [-83.103713, 39.989289],
-            [-83.042568, 39.989289],
-            [-83.042568, 40.063688]
+			[-83.103713, 40.057688],
+            [-83.103713, 39.992289],
+            [-83.022568, 39.992289],
+            [-83.022568, 40.057688]
 		]]}	
 },
 
@@ -171,10 +171,10 @@ var schoolData = [{
     "geometry": {
         "type": "Polygon",
         "coordinates":[[
-			[-83.068661, 39.991323],
-            [-83.068661, 39.970462],
-            [-83.021089, 39.970462],
-            [-83.021089, 39.991323]
+			[-83.073661, 39.988323],
+            [-83.073661, 39.920462],
+            [-83.021089, 39.920462],
+            [-83.021089, 39.988323]
 		]]}	
 },
 
@@ -184,24 +184,24 @@ var schoolData = [{
     "geometry": {
         "type": "Polygon",
         "coordinates":[[
-			[-83.00000, 40.039], 
-            [-82.90000, 40.039],
-            [-82.90000, 39.9000],
-            [-83.00000, 39.9000]
+			[-83.02000, 40.072], 
+            [-82.95000, 40.072],
+            [-82.95000, 39.9000],
+            [-83.02000, 39.9000]
 
 		]]}	
 },
 
 {
     "type": "Feature",
-    "properties": {"name": "Southwestern", "Success %":.28,"Absent %":0.18, "ACT Remedial %": 0.13, "Median Income %": 0.459, "Diversity %": 0.33, "Parent with College Degree":0.207, "Teacher Experience": .8125, "Teacher Salary":0.804, "Teacher Per 1000 student %":0.734, "Graduation %":0.865},
+    "properties": {"name": "Southwestern", "Success %":.28,"Absent %":0.18, "ACT Remedial %": 0.13, "Median Income %": 0.459, "Diversity %": 0.33, "Parent with College Degree":0.207, "Teacher Experience": .8125, "Teacher Salary":0.80364, "Teacher Per 1000 student %":0.73408, "Graduation %":0.865},
     "geometry": {
         "type": "Polygon",
         "coordinates":[[
-			[-83.252031, 39.994919], 
-            [-83.065314, 39.994919], 
-            [-83.065314, 39.797000],
-            [-83.252031, 39.797000]
+			[-83.262031, 39.984919], 
+            [-83.075314, 39.984919], 
+            [-83.075314, 39.797000],
+            [-83.262031, 39.797000]
 		]]}	
 },
 
@@ -211,16 +211,17 @@ var schoolData = [{
     "geometry": {
         "type": "Polygon",
         "coordinates":[[
-			[-83.024819, 39.891353],
-            [-82.931444, 39.891353],
-            [-82.931444, 39.801007],
-            [-83.024819, 39.801007]	
+			[-83.072819, 39.891353],
+            [-82.953444, 39.891353],
+            [-82.953444, 39.801007],
+            [-83.072819, 39.801007]	
 		]]}	
 }
 
     
     
 ];
+
 
 
 
@@ -605,6 +606,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 		});
 	}
 
+	
 	geojson = L.geoJson(schoolData, { 
 		style: style,
 		//style: {color: "red", fillColor: "#f03"},
