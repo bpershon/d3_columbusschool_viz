@@ -1,4 +1,7 @@
 # columbus-city-school-analysis
+
+Demo link: https://bpershon.github.io/
+
 Interactive maps to explore what factors impact a students performance the most.
 
 Software packages: HTML5, Javascript, D3, Leaflet 
